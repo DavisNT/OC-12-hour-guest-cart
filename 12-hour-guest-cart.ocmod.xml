@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Change guest cart timeout to 12 hours</name>
+    <version>0.1</version>
+    <author>Dāvis Mošenkovs</author>
+    <link>https://github.com/DavisNT/OC-12-hour-guest-cart</link>
+    <code>davisnt_12hourguestcart</code>
+    <file path="system/library/cart/cart.php">
+        <operation>
+            <search index="0"><![CDATA[
+            $this->db->query("DELETE FROM " . DB_PREFIX . "cart WHERE (api_id > '0' OR customer_id = '0') AND date_added < DATE_SUB(NOW(), INTERVAL 1 HOUR)");
+            ]]></search>
+            <add position="replace"><![CDATA[
+            $this->db->query("DELETE FROM " . DB_PREFIX . "cart WHERE (api_id > '0' OR customer_id = '0') AND date_added < DATE_SUB(NOW(), INTERVAL 12 HOUR)");
+            ]]></add>
+        </operation>
+    </file>  
+</modification>
