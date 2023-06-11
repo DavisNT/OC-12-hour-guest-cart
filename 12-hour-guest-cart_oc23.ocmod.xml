@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <modification>
     <name>Change guest cart timeout to 12 hours</name>
-    <version>0.1</version>
+    <version>0.1.1</version>
     <author>Dāvis Mošenkovs</author>
     <link>https://github.com/DavisNT/OC-12-hour-guest-cart</link>
     <code>davisnt_12hourguestcart</code>

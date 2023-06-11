@@ -1,17 +1,19 @@
-OpenCart 2.3 12-hour guest cart timeout
+OpenCart 2.3/3.0 12-hour guest cart timeout
 ===============
-OpenCart 2.3 modification to set guest cart timeout to 12 hours
+OpenCart 2.3 and 3.0 modification to set guest cart timeout to 12 hours
 
 ## Introduction
 
 This modification changes time after which items are removed from cart of unauthenticated users from 1 hour to 12 hours.
 
-This is tested only on OpenCart 2.3.0.2.
+This is tested only on OpenCart 2.3.0.2 and OpenCart 3.0.3.8.
 
 ## Installation
 
+1. For OpenCart 3.0 inside the folder `12-hour-guest-cart_oc30.ocmod` compress `install.xml` into `12-hour-guest-cart_oc30.ocmod.zip`.
 1. Open Extensions Installer in OpenCart admin interface.
-1. Upload/install `12-hour-guest-cart.ocmod.xml`.
+1. On OpenCart 2.3 upload/install `12-hour-guest-cart_oc23.ocmod.xml`.
+1. On OpenCart 3.0 upload/install `12-hour-guest-cart_oc30.ocmod.zip`.
 1. Open Modifications in OpenCart admin interface and click Refresh.
 
 ## Notices
